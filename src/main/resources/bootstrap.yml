@@ -8,9 +8,8 @@ spring:
       server:
         git: #配置git仓库地址
           uri: https://github.com/hopejeke/springcloud-config
-          #search-paths: config/folder	#配置文件目录地址
-          search-paths: src/main/resources	#配置文件目录地址
+        #  search-paths: config	#配置文件目录地址
           username: hopejeke	#码云账号（公有项目不需要设置）
-          password: 360430woo 	#码云密码（公有项目不需要设置）
-
-
+          password: 360430woo    #码云密码（公有项目不需要设置）
+          search-paths: src/main/resources    #配置文件目录地址
+      label: master	#分支名称
