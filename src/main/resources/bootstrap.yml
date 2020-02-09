@@ -13,3 +13,14 @@ spring:
           password: 360430woo    #码云密码（公有项目不需要设置）
           search-paths: src/main/resources    #配置文件目录地址
       label: master	#分支名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://xsx:123456@127.0.0.1:8100/eureka/,http://xsx:123456@127.0.0.1:7100/eureka/
+    ###因为该应用为服务提供者，是eureka的一个客户端，需要注册到注册中心
+    register-with-eureka: true
+    ###是否需要从eureka上检索服务
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
+    instance-id: ${spring.application.name}###${server.port} #指定实例id
