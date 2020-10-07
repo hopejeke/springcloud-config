@@ -1,0 +1,7 @@
+email:
+   hostName: smtp.163.com
+   charset: utf-8
+   address: siory123@163.com
+   password: DWHQRSENBRSPCUZF
+   msg:你的验证码为：
+   subject:注册验证码
