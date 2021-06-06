@@ -4,6 +4,6 @@ xxl:
         addresses: 127.0.0.1:8080
     
     
-spring：
-    redis：
-       url： 127.0.0.1:6379        
+spring:
+    redis:
+       url: 127.0.0.1:6379        
