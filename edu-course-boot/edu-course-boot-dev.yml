@@ -1,9 +1,0 @@
-xxl:
-   job:
-     admin:
-        addresses: 127.0.0.1:8080
-    
-    
-spring:
-    redis:
-       url: redis://127.0.0.1:6379      
